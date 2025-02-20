@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.quiz-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+p{
+  margin: 20px;
+}
+.timer {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.question-card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option {
+  padding: 10px;
+  background: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.option:hover {
+  background: #2980b9;
+}
+
+.option.selected {
+  background: #2ecc71;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  background: #e74c3c;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:disabled {
+  background: grey;
+  cursor: not-allowed;
+}
+
+.dashboard-container {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background: #3498db;
+  color: white;
+}
+
+.reattempt-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  background: #2ecc71;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+  .home-container {
+    margin: auto;
+    padding: 15px;
+  }
+  .dashboard-container{
+    width: 80%;
+  }
+}

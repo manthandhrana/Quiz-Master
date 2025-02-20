@@ -1,0 +1,31 @@
+
+  /* Integer Input Styling */
+  input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  input[type="number"]:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .quiz-container {
+      padding: 15px;
+    }
+  
+    input[type="number"] {
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+  
